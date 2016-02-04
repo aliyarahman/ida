@@ -1,0 +1,33 @@
+<h2 id="title-headline">Lynchings, 1982-1984, as tabulated by Ida B Wells in the Red Record (1895)</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Day</th>
+      <th>Month</th>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Allegation</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lynchings.each do |lynching| %>
+      <tr>
+        <td><%= lynching.year %></td>
+        <td><%= lynching.month %></td>
+        <td><%= lynching.day %></td>
+        <td><%= lynching.month %></td>
+        <td><%= lynching.name %></td>
+        <td><%= lynching.city %></td>
+        <td><%= lynching.state %></td>
+        <td><%= lynching.allegation %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
